@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" id="compiled.css-css" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/css/compiled-4.19.2.min.css?ver=4.19.2" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>City Mart</title>
+</head>
+
+<body>
+    <!-- Header section Start -->
+    <section class="header">
+        <nav class="navbar first-nav py-0 bg-light">
+            <div class="container-fluid mx-4 flex">
+                <div class="logoBox">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="img/logo.png" alt="LOGO">
+                    </a>
+                </div>
+
+                <form class="d-flex searchBox">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="serachBtn text-white" type="submit">Search</button>
+                </form>
+
+                <!-- if Not login -->
+                <span>
+                  <a class="btn mx-2 text-black loginBtn" href="/login">LogIn</a>
+                </span>
+ 
+                <!-- if Login -->
+                <!-- <span class="navbar-text userProfile">
+                  <span class="userName mx-2">Jatin Rajput</span>
+                  <img class="userImg" src="img/tonny.jpg" alt="Tonny">
+                  <ul class="logoutBtn">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </span> -->
+                
+
+            </div>
+        </nav>
+
+        <nav class="navbar second-nav py-0 navbar-expand-lg bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <div class="first my-1 bg-white"></div>
+                <div class="second my-1 bg-white"></div>
+                <div class="third bg-white"></div>
+              </span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-center"  id="navbarSupportedContent">
+                    <ul class="navbar-nav main-menu text-white w-100  mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item drop">
+                            <a class="nav-link" href="#">Men</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Shirt's</a></li>
+                                <li><a href="#">Pant's</a></li>
+                                <li><a href="#">Footware</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Women</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Women Western & Maternity Wear</a></li>
+                                <li><a href="#">Ethnic Wear</a></li>
+                                <li><a href="#">Footware</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Baby&Kids</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Clothes</a></li>
+                                <li><a href="#">Footware</a></li>
+                                <li><a href="#">Toye's</a></li>
+                            </ul>
+                        </li>   
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Home&Furniture</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Electronics</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Contect</a>
+                        </li>
+                    </ul>
+                </div>
+                <div><i class="fas fa-shopping-cart text-white"><span class=" mx-1 cartNumber">6</span></i></div>
+            </div>
+        </nav>
+    </section>
+    <!-- Header section End --> 
+
+    <hr>
+    
+    <!-- products start -->
+    <section class="products my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/Adidas White t_shirt.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/Air Casual shoe Men.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/black Women t-Shirt.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/Brown half sleevs T-shirt.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/Brown Long Jacket.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/Solid Rayon Blend Stitched Anarkali Gown.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/Women Fit and Flare Wine Dress.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                    <div class="product-item ">
+                        <div class="pi-pic ">
+                            <img class="productImg" src="img/products/Women Maxi PurpalDress.jpg" alt=" ">
+                            <div class="pi-links ">
+                                <a href="# " class="add-card "><i class="fas fa-shopping-cart"></i><span>ADD TO CART</span></a>
+                                <a href="# " class="wishlist-btn "><i class="fas fa-heart "></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text text-center">
+                            <p class="mb-0">Flamboyant Pink Top </p>
+                            <h3>$35,00</h3> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- products End -->
+
+    <hr>
+
+    <!-- product Detaile Page Start -->
+    <section class="product-details">
+        <div class="d-flex align-items-center h-100">
+            <div class="container text-center py-5">
+              <h3 class="mb-0">Product Detail</h3>
+            </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 mb-4 mb-md-0">
+                      <div class="product-pic-zoom mx-1">
+                            <img class="product-big-img w-100" src="img/products/Women Fit and Flare White Dress.jpg" alt="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 product-details pl-4">
+                    <h2 class="p-title">White peplum top</h2>
+                    <h3 class="p-price my-3">₹ 750</h3>
+                    <h4 class="p-stock">Available: <span>In Stock</span></h4>
+                    <div class="p-rating my-3">
+						<i class="fa fa-star-o" style="color: rgb(210 24 126);"></i>
+						<i class="fa fa-star-o" style="color: rgb(210 24 126);"></i>
+						<i class="fa fa-star-o" style="color: rgb(210 24 126);"></i>
+						<i class="fa fa-star-o" style="color: #9c9292;"></i>
+						<i class="fa fa-star-o" style="color: #9c9292;"></i>
+                    </div>
+                    
+                    <div class="p-review mb-4">
+						<a href="">3 reviews</a>|<a href="">Add your review</a>
+                    </div>
+					<div class="fw-size-choose mb-3">
+						<p class="mr-3">Size</p>
+						<div class="sc-item">
+							<input type="radio" name="sc" id="s-size">
+							<label for="s-size">S</label>
+							
+							<input type="radio" name="sc" id="m-size">
+                            <label for="m-size">M</label>
+                            
+							<input type="radio" name="sc" id="l-size">
+                            <label for="l-size">L</label>
+                            
+							<input type="radio" name="sc" id="xl-size">
+							<label for="xl-size">XL</label>
+						</div>
+					</div>
+                    <div class="quantity mb-4">
+                        <p>Quantity</p>
+                        <div class="pro-qty"><input type="text" value="1"></div>
+                    </div>
+
+                    <div>
+                        <button type="button " class="btn btn-primary ml-0 mr-4">Buy now</button>
+                        <button type="button " class="btn btn-light m-0"><i class="fa fa-shopping-cart pr-2"></i>Add to
+                        cart</button>
+                    </div>
+
+                    <div class="accordion accordion-flush mt-4" id="accordionDescription">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#description" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Description
+                                </div>
+                            </h2>
+                            <div id="description" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionDescription">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>
+									<p>Approx length 66cm/26" (Based on a UK size 8 sample)</p>
+									<p>Mixed fibres</p>
+									<p>The Model wears a UK size 8/ EU size 36/ US size 4 and her height is 5'8"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="accordion accordion-flush my-2" id="accordionFlushExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Information
+                    </div>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingtwo">
+                    <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        CARE DETAILS
+                    </div>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingtwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThee" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      SHIPPING & RETURNS
+                    </div>
+                  </h2>
+                  <div id="flush-collapseThee" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <h4>7 Days Returns</h4>
+                        <p>Cash on Delivery Available<br>Home Delivery <span>3 - 4 days</span></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- product Detaile Page End -->
+
+
+    <!-- Cart Page start  -->
+    <section class="cart">
+        <div class="container text-center py-5">
+            <h3 class="mb-0">Shopping cart</h3>
+        </div>
+        
+        <div class="container">
+            <div class="row justify-content-between ">
+                <div class="addedProduct p-2 col-md-8 row">
+                    <div class="ml-2">
+                        <h5>(Cart 3 items)</h5>
+                    </div>
+                    <div class="row my-3 m-0">
+                        <div class="col-md-3">
+                            <img src="img/products/doted Blue Shirt.jpg" alt="">
+                        </div>
+                        <div class="col-md-9 row">
+                            <div class="col-md-9">
+                                <div><h4>Blue denim shirt</h4></div>
+                                <div class="my-3"><span>Size M</span></div>
+                                <div class="my-3"><span>Quantity 2PC</span></div>
+                                <div><a href=""><i class="fa fa-trash" aria-hidden="true"></i> REMOVE ITEM</a></div>
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <h2>$500</h2>
+                            </div>
+                        </div> 
+                    </div> 
+
+                    <hr>
+
+                    <div class="row my-3 m-0">
+                        <div class="col-md-3">
+                            <img src="img/products/doted Blue Shirt.jpg" alt="">
+                        </div>
+                        <div class="col-md-9 row">
+                            <div class="col-md-9">
+                                <div><h4>Blue denim shirt</h4></div>
+                                <div class="my-3"><span>Size M</span></div>
+                                <div class="my-3"><span>Quantity 2PC</span></div>
+                                <div><a href=""><i class="fa fa-trash" aria-hidden="true"></i> REMOVE ITEM</a></div>
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <h2>$500</h2>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="ml-2"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
+                        items to your cart does not mean booking them.
+                    </div>
+                </div>
+
+                <div class="totalAmount col-md-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>The total amount of</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                  Temporary amount
+                                  <span>$53.98</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                  Shipping
+                                  <span>Gratis</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                  <div>
+                                    <strong>The total amount of</strong>
+                                    <strong>
+                                      <p class="mb-0">(including VAT)</p>
+                                    </strong>
+                                  </div>
+                                  <span><strong>$53.98</strong></span>
+                                </li>
+                              </ul>
+                              <button type="button" class="btn btn-primary btn-block waves-effect waves-light">go to
+                                checkout
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart Page End  -->
+
+  <!-- Section: Contact v.1 -->
+    <section class="contect my-5">
+        <div class="container">
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+                eum porro a pariatur veniam.</p>
+            
+                <!-- Grid row -->
+                <div class="row">
+            
+                <!-- Grid column -->
+                <div class="col-lg-5 mb-lg-0 mb-4">
+            
+                    <!-- Form with header -->
+                    <div class="card">
+                    <div class="card-body">
+                        <!-- Header -->
+                        <div class="form-header blue accent-1">
+                            <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+                        </div>
+
+                        <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+                        <!-- Body -->
+                        <div class="md-form">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form-name" class="form-control">
+                            <label for="form-name">Your name</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="text" id="form-email" class="form-control">
+                            <label for="form-email">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-tag prefix grey-text"></i>
+                            <input type="text" id="form-Subject" class="form-control">
+                            <label for="form-Subject">Subject</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-pencil-alt prefix grey-text"></i>
+                            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                            <label for="form-text">Send message</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-light-blue">Submit</button>
+                        </div>
+
+                    </div>
+                    </div>
+                    <!-- Form with header -->
+            
+                </div>
+                <!-- Grid column -->
+            
+                <!-- Grid column -->
+                <div class="col-lg-7">
+                    <!--Google map-->
+                    <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                        <iframe src="https://maps.google.com/maps?q=Chugitti Chowk, Guru Nanak Pura, Jalandhar, Punjab&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <!-- Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                        <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <p>Jalandhar City, 144001</p>
+                        <p class="mb-md-0">India</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                        <i class="fas fa-phone"></i>
+                        </a>
+                        <p>+91 9877204247</p>
+                        <p class="mb-md-0">Mon - sun, 8:00-22:00</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                        <i class="fas fa-envelope"></i>
+                        </a>
+                        <p>kumarj597@gmail.com</p>
+                        <p class="mb-0">info@gmail.com</p>
+                    </div>
+                    </div>
+            
+                </div>
+                <!-- Grid column -->
+            
+                </div>
+                <!-- Grid row -->
+        </div>
+    </section>
+  <!-- Section: Contact v.1 -->
+
+  <hr>
+
+    <!-- Footer section start -->
+    <section class="footer bg-dark">
+        <button class=""><a href=""><i class="fab fa-twitter"></i></a></i></button>
+        <button class=""><a href=""><i class="fab fa-facebook-f"></i></a></i></button>
+        <button class=""><a href=""><i class="fab fa-instagram"></i></a></i></button>
+        <button class=""><a href=""><i class="fab fa-google-plus-g"></i></a></i></button>
+        <hr class="my-0">
+        <div class="my-1">Create By @JatinRajput - 2021</div>
+    </section>
+    <!-- Footer section End -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+<!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- <script src="js/bootsnav.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
